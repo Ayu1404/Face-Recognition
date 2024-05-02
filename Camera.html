@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="./styles.css" />
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar" id="Navbar">
+        <div></div>
+        <div class="company">
+            <div><img src="./Untitled design.png" class="logo" /></div>
+            <div><h1 class="company-name">FacePin</h1></div>
+        </div>
+        <a href="./Index.html" class="navbar-link" >Home</a>
+        <a href="./About.html" class="navbar-link" class="alt" >About</a>
+        <div>
+            <a href="#" onclick="openSignUp()" class="signup-btn" class="alt" >Sign Up</a>
+            <div id="signup" >
+                <div class="div-head">
+                    <div></div>
+                    <h1 style="color: white;">Sign Up</h1>
+                    <p onclick="closeSignUp()" style="color: white;">X</p>
+                </div>
+                <form class="signup-form">
+                    <div>
+                        <input class="signup-input" type="text" id="fname" name="fname" placeholder="First Name">
+                        <input class="signup-input" type="text" id="fname" name="fname" placeholder="Last Name">
+                        <input class="signup-input" type="text" id="email" name="email" placeholder="Email">
+                    
+                        <input class="signup-input" type="password" id="pass" name="pass" placeholder="Password">
+                    
+                        <input class="signup-input lb" type="submit"  value="Sign Up" onclick="closeSignUp()">
+                        <p style="margin-left: 10px; font-size: 12px; color: white;" onclick="opendLogin()">Already have an account? Login</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#" onclick="myfunction()" class="icon"><img src="https://cdn-icons-png.flaticon.com/128/8771/8771127.png" class="img1"></a>
+</nav>
+    
+
+
+    <!-- add some css props to make camera more attractive -->
+    <!-- i suggest that you should increase this camera size to whole screen size -->
+    <!-- use pesticide chrome extension  in chrome for better understanding for using css -->
+    <video id="video" autoplay="true"></video>
+
+
+ 
+
+    <!--  link to add js file in  html-->
+    <script src="./index.js" ></script> 
+</html>

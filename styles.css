@@ -1,0 +1,493 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.7;    
+}
+
+
+.navbar {
+    height: 80px;
+    background-color:azure;
+    display: grid;
+    grid-template-columns: 0.8fr 5fr 1fr 1fr 1fr 0.8fr;
+    margin-top: -7px;
+
+}
+
+.navbar-link:hover {
+    color:coral;
+}
+.navbar-link:active {
+    color:blue;
+}
+
+/* signup styles */
+#signup {
+    background-color:rgba(0, 0, 0, 0.3);
+    display: none;
+    position:absolute;
+    top: 0px;
+    left: 40vh;
+    animation-fill-mode: forwards;
+}
+
+.div-head {
+    display:grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.signup-form{
+    height: 35vh;
+    width: 50vh;
+
+}
+
+.signup-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 2s;
+}
+  
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 2s;
+}
+  
+@keyframes slideDown {
+    from {top: -300px;}
+    to {top: 0px;}
+}
+  
+@keyframes slideUp {
+    from {top: 0px;}
+    to {top: -300px;}
+}
+
+.signup-input {
+    height: 18px;
+    width: 25vh;
+    border-radius: 20px;
+    padding: 7px;
+    border:5px solid beige;
+    text-decoration: none;
+}
+
+.signup-input:focus {
+    outline: none;
+}
+
+.sb {
+    height: 40px;
+    width: 27.6vh;
+    font-size: 17px;
+}
+.signup-btn {
+    height: 10vh;
+}
+
+.signup-btn:hover {
+    color:coral;
+}
+
+/* signup styles end */
+
+.company {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    display: inline;
+    height: 75px;
+}
+
+.company-name {
+    display:inline;
+    font-size: 30px;
+    margin-top: 200px;
+    font-style: italic;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button {    
+    float: right;
+}
+
+.img1 {
+    display: none;
+}
+
+.icon {
+    display: none;
+}
+
+.home-body {
+    color: white;
+    height: 90vh;
+    width: 99.1vw; /* Set width to 100vw to cover the full viewport width */
+    background-image: url("./facescanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* This will cover the entire area without stretching */
+    background-position: center; /* This will center the image in the available space */
+    display: flex;
+    align-items: center;
+}
+
+
+.intro {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    width: 80vh;
+    height: 40vh;
+    margin-left:180px;
+}
+
+.punch-line {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.btns {
+    display: flex;
+    gap: 50px;
+}
+
+.btn {
+    font-weight: 600;
+    font-size:20px;
+    height: 6vh;
+    width: 20vh;
+    margin: 0px;
+    background-color: white;
+    border-color:white ;
+    color: black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.home-text {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 35px;
+    color:coral
+}
+
+.paras {
+    margin-left:40vh;
+    margin-right: 40vh;
+  
+   
+}
+
+.f-para {
+    word-spacing: 5px;
+    
+}
+
+.para {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 23vh;
+    word-spacing: 5px;
+}
+
+hr {
+    height: 1px;
+    background-color: blue;
+    border: none;  
+    clear: both;
+}
+
+.img-left {
+    float: left;
+    height:22vh;
+    
+}
+
+.img-right {
+    float: right;
+    height: 22vh;
+}
+
+.p1 {
+    text-align: left;
+    margin-left: 42vh;
+}
+
+.p2 {
+    text-align: left;
+    margin-right: 42vh;
+}
+
+
+/* Login box styles */
+#login {
+    background-color:rgba(0, 0, 0, 0.3);
+    display: none;
+    position:absolute;
+    top: 0px;
+    left: 40vh;
+    animation-fill-mode: forwards;
+}
+
+.div-head {
+    display:grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.login-form{
+    height: 30vh;
+    width: 50vh;
+
+}
+
+.login-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 2s;
+}
+  
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 2s;
+}
+  
+@keyframes slideDown {
+    from {top: -300px;}
+    to {top: 0px;}
+}
+  
+@keyframes slideUp {
+    from {top: 0px;}
+    to {top: -300px;}
+}
+
+.login-input {
+    height: 18px;
+    width: 25vh;
+    border-radius: 20px;
+    padding: 7px;
+    border:5px solid beige;
+    text-decoration: none;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+.lb {
+    height: 40px;
+    width: 27.6vh;
+    font-size: 17px;
+}
+/* login box styles end */
+
+footer {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: azure;
+    height: 25vh;
+    color: coral;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  
+}
+
+
+.footer-text {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr ;
+    margin: 0vh 40vh 0vh 40vh;
+}
+
+.footer-text div {
+    margin-top: 23px;
+}
+
+.footer-icons {
+    margin-top:-5px;
+    height: 22px;
+    margin-right: 15px;
+}
+
+.ema {
+    margin-top: -30px;
+}
+
+footer-btn {
+    margin-right: 10px;
+}
+
+/* home page styles end */
+
+
+/* about page  styles*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0pc 25pc 0pc 25pc;
+}
+
+.about-h2 {
+    font-size: 50px;
+}
+
+.name {
+    margin-top: 3pc;
+    height: 68vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0000000000001), rgba(0, 0, 0, 0.6)), url('https://images.tmcnet.com/tmc/misc/articles/image/2023-mar/8616712346-AdobeStock_318855993_face%20recognition.jpeg');
+}
+
+
+.c-name {
+    font-size: 50px;
+    color: rgb(247, 178, 51);
+    margin-top: 57vh;
+}
+
+.about-paras {
+    margin: 5pc 17pc 20px 17pc;
+}
+
+.about-para {
+    margin-bottom:  25px;
+    word-spacing: 5px;
+    font-family: 'Arial', sans-serif; /* Use a legible font */
+    color: #333; /* Use a color that contrasts with the background */
+    text-align: justify; /* Align the text on both left and right sides */
+    
+}
+
+.about-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.about-icons {
+    height: 25px;
+}
+
+.about-button {
+    text-transform: uppercase;
+    margin-top: 3pc;
+    margin-bottom: 3pc;
+    border-radius:20px;
+    padding: 12px;
+    border-color: 1px solid black;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+.about-button:hover {
+    background-color: black;
+    color: white;
+}
+/* about page styles end */
+
+
+
+
+
+/*  props for mobile need to be done*/
+/* @media (min-width:10px) and (max-width:600px) {
+    body {
+        background-color: rgb(170, 206, 209);            
+    }
+
+    .img1 {
+        display: block;
+        height: 2.4vh;
+      
+        width: 2vh;
+    }
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        background-color: white;
+        width: 20%;
+        display: block;
+    }
+}
+    
+@media (min-width:10px) and (max-width:600px) {
+    .navbar.responsive {position: relative;}
+    .icon {
+        position:absolute;
+        right: 0;
+        top: 0;
+        background-color: aliceblue;
+    }
+
+   
+    .navbarresponsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: -4.5px;
+       
+    }
+
+    .navbarresponsive #a1 {
+        width: 65%;
+    }
+
+    .navbarresponsive #a2 ,#a3 ,#a4 {
+        width: 100%;
+    }
+
+    .navbarresponsive {
+        margin-top: -8px;
+        width: 120%;
+    }
+
+    .navbarresponsive .icon .img1 {
+      margin-left: 7vh;
+    }
+        
+
+} */

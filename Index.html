@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"  href="./styles.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <nav class="navbar" id="Navbar">
+                <div></div>
+                <div class="company">
+                    <div><img src="./Untitled design.png" class="logo" /></div>
+                    <div><h1 class="company-name">FacePin</h1></div>
+                </div>
+                <a href="./Index.html" class="navbar-link" >Home</a>
+                <a href="./About.html" class="navbar-link" class="alt" >About</a>
+                <div>
+                    <a href="#" onclick="openSignUp()" class="signup-btn" class="alt" >Sign Up</a>
+                    <div id="signup" >
+                        <div class="div-head">
+                            <div></div>
+                            <h1 style="color: white;">Sign Up</h1>
+                            <p onclick="closeSignUp()" style="color: white;">X</p>
+                        </div>
+                        <form class="signup-form">
+                            <div>
+                                <input class="signup-input" type="text" id="fname" name="fname" placeholder="First Name">
+                                <input class="signup-input" type="text" id="fname" name="fname" placeholder="Last Name">
+                                <input class="signup-input" type="text" id="email" name="email" placeholder="Email">
+                            
+                                <input class="signup-input" type="password" id="pass" name="pass" placeholder="Password">
+                            
+                                <input class="signup-input lb" type="submit"  value="Sign Up" onclick="closeSignUp()">
+                                <p style="margin-left: 10px; font-size: 12px; color: white;" onclick="opendLogin()">Already have an account? Login</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <a href="#" onclick="myfunction()" class="icon"><img src="https://cdn-icons-png.flaticon.com/128/8771/8771127.png" class="img1"></a>
+        </nav>  
+
+        <div class="home-body">
+            <div class="intro">
+                <p class="punch-line">"Experience the Future of Security with Our Advanced Face Recognition Technology." </p>
+                <div class="btns">   
+                    <div>
+                        <!-- can change target to blank if want to open it in different page -->
+                        <a href="./camera.html" >    
+                            <button id="openCamera" class="btn">Scan Now</button>
+                        </a>
+                    </div>
+                    <div>
+                        <button onclick="openLogin()" class="btn">Login</button>
+                        <div id="login" >
+                            <div class="div-head">
+                                <div></div>
+                                <h1>Login</h1>
+                                <p onclick="closeLogin()">X</p>
+                            </div>
+                            <form class="login-form">
+                                <div>
+                                    <input class="login-input" type="text" id="email" name="email" placeholder="Email">
+                                
+                                    <input class="login-input" type="password" id="pass" name="password" placeholder="Password">
+                                    <p style="margin-left: 10px; font-size: 12px;">Forgot password / Reset password ?</p>
+                                    <input class="login-input lb" type="submit"   value="Login" onclick="closeLogin()">
+                                    <p style="margin-left: 10px; font-size: 12px;" onclick="opendSignUp()" >Don't have an account? SignUp</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="home-text">
+            <h2>OUR FACE RECOGNITION</h2>
+            <div class="paras">
+                <p class="f-para">In the current era, a human face is not only used for social interactions but also extensively utilized to unlock various devices. This particular technology is well known as Face recognition. It utilizes the human face to act as a password for multiple devices employing biometric face recognition technology. A person is no longer required to remember passwords that can be easily forgotten, lost or stolen. As technology advances, facial recognition system is getting more potential in various industries ranging from Enterprises, Hospitals, Law enforcement,  Hospitality to Marketing.</p>
+                    <hr />
+                <div class="para">
+                    <img src="https://media.istockphoto.com/id/1368254992/video/face-id-detection-biometric-facial-recognition-security-system-3d-scanning-authentication-of.jpg?s=640x640&k=20&c=DELfBDNRBn3CY098E61ITAxK4dqWHgANoDZCsd-_zuw="  class="img-left"/>
+                    <p class="p1">Face scanner is the future generation recognition system that provides an incredibly versatile human verification process. Its application is not restricted for the security concerns only but also promptly expands the outreach in a commercial domain.</p>
+                    <p class="p1">Facial recognition system captures still images or live video images to identify an individual through a certain distance as it does not involve any physical interaction with the person. The images captured will be in the form of nodal points that is compared with the existing nodal points present in the system to identify a pre-registered individual.</p>
+                </div>    
+                    <hr /> 
+                    
+                <div class="para">
+                    <img src="https://faceitsystems.com/wp-content/uploads/2023/03/face-recognition-fingerpeint.png"  class="img-right"/>
+                    <p class="p2">The non-contact procedure rendered by biometrics face recognition technology provides a safe, rapid and reliable solution as compared to other biometric recognition systems like a fingerprint scanner, Palm Vein Scanner, IRIS Scanner, etc.</p>
+                    <p class="p2">FacePin's Face recognition technology couples various Biometric facial features. FacePin have created innovative product with a team of profound engineers rendering innovative integrated biometric machines which has functionality of Facial recognition .</p>
+                </div>
+                    <hr /> 
+                <div class="para">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/021/224/288/small_2x/woman-scans-face-using-facial-recognition-system-on-mobile-phone-for-biometric-identification-future-high-tech-technology-and-face-id-photo.jpg"  class="img-left"/>
+                    <p class="p1">FacePin's face recognition is so reliable that it can capture the images of a face irrespective of some traits i.e. age, gender, skin tone, and size as it doesn’t create any negative impact in identification. Additionally, Face recognition technology is also useful for border control security, national identification process, immigration at the airports and much more. Apart from this, it can also be employed in access control, monitoring and mobility solutions.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-text">
+                <div >
+                    <h1>Get in Touch</h1>
+                    
+                        <img class="footer-icons" src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" />
+                   
+        
+                    
+                        <img class="footer-icons" src="https://cdn-icons-png.flaticon.com/128/733/733635.png" />
+                    
+        
+                  
+                        <img class="footer-icons" src="https://cdn-icons-png.flaticon.com/128/717/717392.png" />
+                   
+        
+                  
+                        <img class="footer-icons" src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" />
+                   
+                </div>
+                <div>
+                    <div>
+                        
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                          <h5 style="font-size: 20px;">Subscribe to our newsletter</h5>
+                          <p style="margin-top: -25px;">Monthly digest of what's new and exciting from us.</p>
+                          <div class=" ema d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="footer-btn btn-primary" type="button">Subscribe</button>
+                          </div>
+                        </form>
+                      </div>
+                      
+
+                </div>
+                
+               
+            </div>
+        
+        </footer>
+       
+        <!--  link to add js file in  html-->
+        <script src="./index.js" ></script> 
+    </body>
+</html>

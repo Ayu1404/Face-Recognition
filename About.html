@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="./styles.css" />
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar" id="Navbar">
+        <div></div>
+        <div class="company">
+            <div><img src="./Untitled design.png" class="logo" /></div>
+            <div><h1 class="company-name">FacePin</h1></div>
+        </div>
+        <a href="./Index.html" class="navbar-link" >Home</a>
+        <a href="./About.html" class="navbar-link" class="alt" >About</a>
+        <div>
+            <a href="#" onclick="openSignUp()" class="signup-btn" class="alt" >Sign Up</a>
+            <div id="signup" >
+                <div class="div-head">
+                    <div></div>
+                    <h1 style="color: white;">Sign Up</h1>
+                    <p onclick="closeSignUp()" style="color: white;">X</p>
+                </div>
+                <form class="signup-form">
+                    <div>
+                        <input class="signup-input" type="text" id="fname" name="fname" placeholder="First Name">
+                        <input class="signup-input" type="text" id="fname" name="fname" placeholder="Last Name">
+                        <input class="signup-input" type="text" id="email" name="email" placeholder="Email">
+                    
+                        <input class="signup-input" type="password" id="pass" name="pass" placeholder="Password">
+                    
+                        <input class="signup-input lb" type="submit"  value="Sign Up" onclick="closeSignUp()">
+                        <p style="margin-left: 10px; font-size: 12px; color: white;" onclick="opendLogin()">Already have an account? Login</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#" onclick="myfunction()" class="icon"><img src="https://cdn-icons-png.flaticon.com/128/8771/8771127.png" class="img1"></a>
+</nav>
+
+    <div class="about">
+        <h2 class="about-h2">About Us</h2>
+        <div class="name">
+            <p class="c-name">FACEPIN</p>
+        </div>
+
+        <div class="about-paras">
+            <p class="about-para">Welcome to FacePin, your trusted partner in face recognition technology.
+
+                At FacePin, we believe in the power of technology to create a safer, more connected world. Our mission is to provide cutting-edge, reliable, and accessible face recognition solutions that empower individuals and businesses alike.</p>
+
+            <p class="about-para">Our face recognition technology is built on advanced machine learning algorithms that have been trained on a diverse set of facial features. This allows us to offer a high degree of accuracy and speed in identifying faces. Whether you’re using FacePin for personal use or integrating it into your business, you can trust our technology to deliver reliable results.</p>
+
+            <p class="about-para">We envision a future where face recognition technology is seamlessly integrated into everyday life, enhancing security and personalization while respecting privacy. We’re committed to making this vision a reality by continuously improving our technology and services.</p>
+
+            <p class="about-para">FacePin is the product of a dedicated team of computer science enthusiasts with a strong passion for cryptography and web development. The team’s discipline and focus are reflected in the meticulous work we do at FacePin.</p>
+
+            <p class="about-para">We’d love to hear from you! Whether you have questions, feedback, or just want to learn more about our technology, don’t hesitate to get in touch. Together, we can shape the future of face recognition technology.</p>    
+            
+        </div>
+
+        <div class="about-footer">
+            <a href="https://www.facebook.com/">
+                <img class="about-icons" src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" />
+            </a>
+
+            <a href="https://twitter.com/">
+                <img class="about-icons" src="https://cdn-icons-png.flaticon.com/128/733/733635.png" />
+            </a>
+
+            <a href="https://www.instagram.com/">
+                <img class="about-icons" src="https://cdn-icons-png.flaticon.com/128/717/717392.png" />
+            </a>
+
+            <a href="https://www.youtube.com/">
+                <img class="about-icons" src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" />
+            </a>
+
+        </div>
+        
+        <!-- add your mail here -->
+        <a href="mailto:example@gmail.com">
+            <button class="about-button">Email, Perhaps?</button>
+        </a>
+    </div>
+    
+
+   <!--  link to add js file in  html-->
+   <script src="./index.js" ></script> 
+</body>
+</html>
